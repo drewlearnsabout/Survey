@@ -1,35 +1,44 @@
 <html>
 <head>
     <title>My Survey</title>
+    <link rel="stylesheet" href="style.css">
 </head>    
 
 <body>
+    <div id="container">
     <h1 id="title">Feedback Survey</h1>
-    <div id="container1">
+    </div>
         <form id="survey-form" action="/submit-info-here">
-            <p id="improve">How can we can improve?</p>
-            <label id="name-label">Name</label>
-            <input id="name" type="text" placeholder="Name" required>
-            <label id="email-label">Email</label>
-            <input id="email" type="email" placeholder="Email" required>
-            <label id="number-label">Age</label>
-            <input id="number" type="number" placeholder="Age" min="1" max="100" required>
+            <div id="container1">
+                <p id="improve">How can we can improve?</p>
+                <label id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Name" required>
+                <label id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Email" required>
+                <label id="number-label">Age</label>
+                <input id="number" type="number" placeholder="Age" min="1" max="100" required>
+            </div>
+            <div id="container2">            
+                <label id="dropdown-label">How would you rate us?</label>
+                <select id="dropdown" name="rateus" class="dropdown">
+                    <option disabled value>Please select an option</option>
+                    <option value="poorly">1 - Eh...</option>
+                    <option value="so-so">2 - So so</option>
+                    <option value="get-there">3 - Getting there</option>
+                    <option value="just-right">4 - Just right</option>
+                    <option value="beyond">5 - Above and beyond!</option>
+                </select>
+            </div>
             
-            <label id="dropdown-label">How would you rate us?</label>
-            <select id="dropdown" name="rateus" class="dropdown">
-                <option disabled value>Please select an option</option>
-                <option value="poorly">1 - Eh...</option>
-                <option value="soso">2 - So so</option>
-                <option value="getthere">3 - Getting there</option>
-                <option value="justright">4 - Just right</option>
-                <option value="beyond">5 - Above and beyond!</option>
-            </select>
+                <label for="recommendation">
+                        <div id="container3">
+                    <p id="recommendation-label">Would you recommend me as a web developer?</p>
+                    <input id="absolutely" type="radio" name="recommend">Absolutely!
+                    <input id="maybe" type="radio" name="recommend">Maybe.
+                    <input id="probably-not" type="radio" name="recommend">Probably not...
+                </div>
+                </label>
             
-            <label for="recommendation">Would you recommend me as a web developer?
-                <input id="absolutely" type="radio" name="recommend">Absolutely!
-                <input id="maybe" type="radio" name="recommend">Maybe.
-                <input id="probably-not" type="radio" name="recommend">Probably not...
-            </label>
 
             <label for="suggestions">Any final thoughts or suggestions?
                 <input type="text" placeholder="Final thoughts or suggestions">
@@ -38,6 +47,6 @@
             
             <button type="submit">Submit</button>
         </form>
-    </div>
+    
 </body>
 </html>
