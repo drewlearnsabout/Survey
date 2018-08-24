@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>My Survey</title>
+</head>    
+
+<body>
+    <h1 id="title">Feedback Survey</h1>
+    <div id="container1">
+        <form id="survey-form" action="/submit-info-here">
+            <p id="improve">How can we can improve?</p>
+            <label id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Name" required>
+            <label id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Email" required>
+            <label id="number-label">Age</label>
+            <input id="number" type="number" placeholder="Age" min="1" max="100" required>
+            
+            <label id="dropdown-label">How would you rate us?</label>
+            <select id="dropdown" name="rateus" class="dropdown">
+                <option disabled value>Please select an option</option>
+                <option value="poorly">1 - Eh...</option>
+                <option value="soso">2 - So so</option>
+                <option value="getthere">3 - Getting there</option>
+                <option value="justright">4 - Just right</option>
+                <option value="beyond">5 - Above and beyond!</option>
+            </select>
+            
+
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
