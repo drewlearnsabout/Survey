@@ -1,3 +1,7 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to bottom right, #666699 35%, #ff9933 100%);
+}
 #container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -81,27 +85,75 @@
 
 #container3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px 0;
 }
 
 #recommendation {
     grid-area: 1 / 3 / 2 / 4;
+    justify-self: center;
 }
 
 #container3 #absolutely {
-    grid-area: 2 / 3 / 3 / 4;
-    border: 2px solid black;
+    grid-area: 2 / 3 / 3 / 4;   
 }
 
 #container3 #maybe {
-    grid-area: 3 / 3 / 4 / 4;
-    border: 2px solid black;
+    grid-area: 3 / 3 / 4 / 4;    
 }
 
 #container3 #probably-not {
     grid-area: 4 / 3 / 5 / 4;
 }
+
+#container4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px 0;
+    margin-top: 10px;
+}
+
+#focus {
+    grid-area: 1 / 3 / 2 / 4;
+    justify-self: center;
+}
+
+#design {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#service {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+#advertisement {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+#container5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 15px;
+}
+
+#suggestions-label {
+    grid-area: 1 / 3 / 2 / 4;
+    justify-self: center;
+}
+
+#container6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+button {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
 
 
 
