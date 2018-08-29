@@ -11,7 +11,7 @@
     </div>
         <form id="survey-form" action="/submit-info-here">
             <div id="container1">
-                <p id="improve">How can I can improve?</p>
+                <p id="description">How can I can improve?</p>
                 <label id="name-label">Name</label>
                 <input id="name" type="text" placeholder="Name" required>
                 <label id="email-label">Email</label>
@@ -33,13 +33,13 @@
             <div id="container3">
                     <label id="recommendation">Would you recommend me as a web developer?</label>
                     <label id="absolutely" for="absolutely" class="radio-label">    
-                        <input id="absolutely" type="radio" name="recommend">Absolutely!
+                        <input id="absolutely" type="radio" name="recommend" value="1">Absolutely!
                     </label>
                     <label id="maybe" for="maybe" class="radio-label">
-                        <input id="maybe" type="radio" name="recommend">Maybe.
+                        <input id="maybe" type="radio" name="recommend" value="2">Maybe.
                     </label>
-                    <label id="probably-not" for="probably-not" class="radio-label">
-                        <input id="probably-not" type="radio" name="recommend">Probably not...
+                    <label id="probably-not" for="probably-not" class="radio-label" >
+                        <input id="probably-not" type="radio" name="recommend" value="3">Probably not...
                     </label>
             </div>
             <div id="container4">
@@ -58,7 +58,7 @@
             
             <div id="container5">
                 <label id="suggestions-label" for="suggestions">Any final thoughts or suggestions?
-                    <input id="suggestions" type="text" placeholder="Thoughts or suggestions">
+                    <textarea id="suggestions" placeholder="Thoughts or suggestions" rows="4" cols="30"></textarea>
                 </label>
             </div>
 
